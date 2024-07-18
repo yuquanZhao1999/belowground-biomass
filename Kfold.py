@@ -82,14 +82,7 @@ predictions_rf_af = rf.predict(X)
 test_score = rf.score(X_test, y_test)
 print("Test Set Accuracy rf: {:.4f}".format(test_score))
 print("GBR Model Test Score: ", np.sqrt(np.mean((predictions_rf - y_test) ** 2)))
-#%%
-from sklearn.svm import SVR
-SVR=SVR(kernel='linear',)
-scoressvr = cross_val_score(SVR, X, y, cv=kfoldr,scoring='r2',n_jobs=-1)
-for i, score in enumerate(scoressvr):
-    print("Fold {}: {:.4f}".format(i+1, score))
-# 输出平均准确率
-print("Average Accuracy rf: {:.4f}".format(scoressvr.mean()))
+
 #%%
 from sklearn.linear_model import Lasso
 lasso = Lasso(alpha= 41)
