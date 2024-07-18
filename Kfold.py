@@ -4,9 +4,6 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import cross_val_score, KFold
-from sklearn.preprocessing import RobustScaler
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
 
 #%%
 # 定义特征矩阵X和目标变量矩阵y
