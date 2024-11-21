@@ -109,7 +109,6 @@ predictions = stacked_model.predict(X_test)
 # 计算性能指标
 r2 = stacked_model.score(X_test, y_test)
 
-r2train = stacked_model.score(X_train, y_train)
 print(f"R2: {r2}")
 #%%
 stacked_pred = stacked_model.predict(X_test)
